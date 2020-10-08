@@ -16,7 +16,6 @@ public class ProductController {
 
     @GetMapping(value = "product/getall")
     public List<Product> getProdcts(){
-
         return productService.getProducts();
     }
     @PostMapping(value = "product/add")
