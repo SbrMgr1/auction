@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
-
 import java.util.List;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -49,7 +48,7 @@ public class ProductControllerTest {
 //                        hasProperty("name",is("Macbook Pro 16"))
 //                )
 //        ));
-        
+
 //        MatcherAssert.assertThat(products,everyItem(
 //                allOf(
 //                        hasProperty("productCategory",hasProperty("id",is(1l)))

@@ -2,6 +2,8 @@ package com.product.controllers;
 
 import com.product.domains.Product;
 import com.product.services.ProductService;
+import com.product.services.impl.ProductServiceImpl;
+import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,6 +29,8 @@ public class ProductController {
     public Product addProdcts(@RequestBody Product product, @PathVariable("productId") Long productId){
         product.setId(productId);
         return productService.save(product);
+
+
     }
 
     @DeleteMapping(value = "product/delete/{productId}")
