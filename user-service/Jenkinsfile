@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                    echo 'building process'
-                   sh 'mvn clean compile'
+                   sh 'mvn -version'
 //                 withMaven(maven:'Maven'){
 //                     sh 'mvn clean compile'
 //                 }
