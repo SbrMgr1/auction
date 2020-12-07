@@ -7,18 +7,13 @@ pipeline {
         stage('Build') {
             steps {
                    echo 'building process'
-                   sh 'mvn -version'
-//                 withMaven(maven:'Maven'){
-//                     sh 'mvn clean compile'
-//                 }
+                   sh 'mvn clean compile'
             }
         }
         stage('Test') {
             steps {
                 echo 'test process'
-//                 withMaven(maven:'Maven'){
-//                                      sh 'mvn test'
-//                                }
+                sh 'mvn test'
             }
         }
 //         stage('Deploy') {
