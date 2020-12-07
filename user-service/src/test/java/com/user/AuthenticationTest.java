@@ -15,9 +15,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.hamcrest.Matchers.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-//@SpringBootTest
-//@AutoConfigureMockMvc
-//@ContextConfiguration(classes = UserApplication.class)
+@SpringBootTest
+@AutoConfigureMockMvc
+@ContextConfiguration(classes = UserApplication.class)
 public class AuthenticationTest {
 
 //    @Autowired
