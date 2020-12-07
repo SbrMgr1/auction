@@ -8,7 +8,7 @@ pipeline {
             steps {
                    echo 'building process'
 //                    sh 'mvn -f user-service/pom.xml <goals>'
-                   sh 'mvn -f user-service/pom.xml'
+                   sh 'mvn -f user-service/pom.xml user'
                    sh 'mvn clean compile'
             }
         }
