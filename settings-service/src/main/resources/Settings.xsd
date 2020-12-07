@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.wsdl.com"
+        xmlns:tns="http://www.wsdl.com"
+        elementFormDefault="qualified"
+>
+    <xsd:element name="SettingRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="SettingResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="siteName" type="xsd:string" />
+                <xsd:element name="loginCredit" type="xsd:long" />
+                <xsd:element name="auctionResetTime" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</schema>
