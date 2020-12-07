@@ -6,13 +6,13 @@ pipeline {
     stages {
             stage('Specify project location') {
                 steps {
-                       sh 'mvn -f user-service/pom.xml install'
+                       sh 'mvn -f user-service/pom.xml clean install'
                 }
             }
         stage('Build') {
             steps {
                    echo 'building process'
-                   sh 'mvn clean compile'
+                   sh 'mvn compile'
             }
         }
         stage('Test') {
