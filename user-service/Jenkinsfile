@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                    echo 'building process'
-                   sh 'mvn compile'
+                   sh 'mvn -f user-service/pom.xml compile'
             }
         }
 //         stage('Test') {
