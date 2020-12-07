@@ -9,12 +9,12 @@ pipeline {
                        sh 'mvn -f user-service/pom.xml clean install'
                 }
             }
-//         stage('Build') {
-//             steps {
-//                    echo 'building process'
-//                    sh 'mvn compile'
-//             }
-//         }
+        stage('Build') {
+            steps {
+                   echo 'building process'
+                   sh 'mvn compile'
+            }
+        }
 //         stage('Test') {
 //             steps {
 //                 echo 'test process'
