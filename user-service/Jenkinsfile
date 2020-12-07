@@ -6,7 +6,7 @@ pipeline {
     stages {
             stage('Specify project location') {
                 steps {
-                       sh 'mvn compile'
+                       sh 'mvn -f user-service/pom.xml clean install'
                 }
             }
 //         stage('Build') {
