@@ -6,13 +6,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                   echo 'building process started'
+                   echo 'building process is started'
                    sh 'mvn -f user-service/pom.xml clean compile'
             }
         }
         stage('Test') {
             steps {
-                echo 'test process started'
+                echo 'test process is started'
                 sh 'mvn -f user-service/pom.xml clean test'
             }
         }
