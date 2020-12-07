@@ -4,11 +4,14 @@ pipeline {
             maven 'Maven3'
     }
     stages {
+            stage('Specify project location') {
+                steps {
+                       sh 'mvn -f user-service/pom.xml install'
+                }
+            }
         stage('Build') {
             steps {
                    echo 'building process'
-//                    sh 'mvn -f user-service/pom.xml <goals>'
-                   sh 'mvn -f user-service/pom.xml clean install'
                    sh 'mvn clean compile'
             }
         }
