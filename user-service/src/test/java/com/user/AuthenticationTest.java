@@ -43,7 +43,7 @@ public class AuthenticationTest {
                 status().isOk()
 
         ).andExpect(
-                jsonPath("$.status", is(false))
+                jsonPath("$.status", is(true))
         );
     }
 
